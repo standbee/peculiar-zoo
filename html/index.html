@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="text-center mx-10 space-y-2">
+<body class="text-center mx-8 space-y-2">
 
   <ul class="md:flex sm:flex-column w-full py-4 md:py-0 px-4">
     <li class="-mb-px mr-1">
@@ -34,11 +34,11 @@
 
   <main>
 
-    <p>The natural world contains about 8.7 million species, according to the Census of Marine Life, although many
+    <p class="my-10">The natural world contains about 8.7 million species, according to the Census of Marine Life, although many
       scientists say the true figure could be millions more. Some of them ended up slightly stranger than the rest of
       the animal and underwater kingdom.</p>
 
-    <div class="md:flex md:flex-row sm:flex-column justify-around ">
+    <div class="md:flex md:flex-row sm:flex-column justify-around items-center">
       <div class="basis-1/3 rounded border-solid border border-gray-100">
         <figure>
           <img src="../assets/VenezuelanMoth.jpg">
@@ -59,7 +59,36 @@
       </div>
     </div>
 
+    <p class="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique ex dolorum cupiditate quos, nesciunt nisi
+      officia? Molestiae tempora, molestias dolorum magni omnis iste expedita veritatis nesciunt, hic nostrum odit
+      fugiat magnam eveniet ab, laudantium voluptate tempore incidunt dignissimos vero quisquam eaque! Ab eligendi
+      repellat dolorum atque velit exercitationem aliquam cupiditate, ipsum mollitia recusandae, tenetur ipsam rerum
+      quia totam dicta, ducimus unde quas repudiandae consequatur commodi sit. Molestiae dolor excepturi iusto autem,
+      earum obcaecati vel maiores corrupti aperiam ea quos.</p>
+
   </main>
+
+  <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+          class="hover:underline">Peculiar Zoo™</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
@@ -67,6 +96,7 @@
 
 <style>
   img {
+    float:none;
     width: 60vh;
     height: 50vh;
     object-fit: cover;
