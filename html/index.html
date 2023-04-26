@@ -5,11 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="text-center mx-8 space-y-2">
 
-  <ul class="md:flex sm:flex-column w-full py-4 md:py-0 px-4">
+  <script>
+    function toggle() {
+      var x = document.getElementById("navbar");
+      if (!x.classList.contains("responsive")) {
+        x.className += " responsive";
+      } else {
+        x.classList.remove("responsive");
+      }
+    } 
+  </script>
+
+  <ul id="navbar" class="sticky top-0 z-50 topnav md:flex sm:flex-column w-full py-4 md:py-0 px-4 bg-white border-b"> <!--  py-4 md:py-0 -->
     <li class="-mb-px mr-1">
       <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold"
         href="#">Home</a>
@@ -22,7 +34,18 @@
       <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
         href="information.html">Information</a>
     </li>
-    <!-- <li class="mr-1">
+
+    <li onclick="toggle()" class="md:hidden mr-1 icon bg-white" href="javascript:void(0);">
+      <button class="outline-none mobile-menu-button">
+        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </li>
+  </ul>
+
+  <!-- <li class="mr-1">
       <a class="bg-white inline-block py-2 px-4 text-gray-400 font-semibold" href="#">Tab</a>
     </li> -->
   </ul>
@@ -34,7 +57,8 @@
 
   <main>
 
-    <p class="my-10">The natural world contains about 8.7 million species, according to the Census of Marine Life, although many
+    <p class="my-10">The natural world contains about 8.7 million species, according to the Census of Marine Life,
+      although many
       scientists say the true figure could be millions more. Some of them ended up slightly stranger than the rest of
       the animal and underwater kingdom.</p>
 
@@ -51,15 +75,18 @@
           <figcaption>Glaucus Atlanticus</figcaption>
         </figure>
       </div>
-      <div class="basis-1/3 rounded border-solid border border-gray-100">
-        <figure>
-          <img src="../assets/DumboOctopus.jpg"> <!-- style="height:60vh" -->
-          <figcaption>Dumbo Octopus</figcaption>
-        </figure>
-      </div>
+      <a href="profiles/dumbo-octopus.html">
+        <div class="basis-1/3 rounded border-solid border border-gray-100">
+          <figure>
+            <img src="../assets/DumboOctopus.jpg"> <!-- style="height:60vh" -->
+            <figcaption>Dumbo Octopus</figcaption>
+          </figure>
+        </div>
+      </a>
     </div>
 
-    <p class="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique ex dolorum cupiditate quos, nesciunt nisi
+    <p class="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique ex dolorum cupiditate quos,
+      nesciunt nisi
       officia? Molestiae tempora, molestias dolorum magni omnis iste expedita veritatis nesciunt, hic nostrum odit
       fugiat magnam eveniet ab, laudantium voluptate tempore incidunt dignissimos vero quisquam eaque! Ab eligendi
       repellat dolorum atque velit exercitationem aliquam cupiditate, ipsum mollitia recusandae, tenetur ipsam rerum
@@ -96,7 +123,7 @@
 
 <style>
   img {
-    float:none;
+    float: none;
     width: 60vh;
     height: 50vh;
     object-fit: cover;
