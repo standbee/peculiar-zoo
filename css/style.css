@@ -28,6 +28,6 @@
     #navbar.responsive li {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
 }
