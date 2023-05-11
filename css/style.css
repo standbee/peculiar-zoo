@@ -1,3 +1,7 @@
+#link:hover {
+    cursor: hand;
+}
+
 .icon {
     display: hidden;
 }
