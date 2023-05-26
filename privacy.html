@@ -1,47 +1,50 @@
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="text-center mx-8 space-y-2 min-h-screen">
+<body class="text-center mx-8 space-y-2">
 
-    <script>
-        function toggle() {
-            var x = document.getElementById("navbar");
-            if (!x.classList.contains("responsive")) {
-                x.className += " responsive";
-            } else {
-                x.classList.remove("responsive");
-            }
-        } 
-    </script>
+  <script>
+    function toggle() {
+      var x = document.getElementById("navbar");
+      if (!x.classList.contains("responsive")) {
+        x.className += " responsive";
+      } else {
+        x.classList.remove("responsive");
+      }
+    } 
+  </script>
 
-    <ul id="navbar" class="sticky top-0 z-50 topnav md:flex sm:flex-column w-full py-4 md:py-0 px-4 bg-white border-b">
-        <li class="-mb-px mr-1">
-            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-                href="index.html">Home</a>
-        </li>
-        <li class="mr-1">
-            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-                href="categories.html">Categories</a>
-        </li>
-        <li class="mr-1">
-            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-                href="information.html">Information</a>
-        </li>
+  <ul id="navbar" class="sticky top-0 z-50 topnav md:flex sm:flex-column w-full py-4 md:py-0 px-4 bg-white border-b">
+    <!--  py-4 md:py-0 -->
+    <li class="mr-1">
+      <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
+        href="index.html">Home</a>
+    </li>
+    <li class="mr-1">
+      <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
+        href="#">Categories</a>
+    </li>
+    <li class="mr-1">
+      <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
+        href="information.html">Information</a>
+    </li>
 
-        <li onclick="toggle()" class="md:hidden mr-1 icon bg-white" href="javascript:void(0);">
-            <button class="outline-none mobile-menu-button">
-                <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </li>
-    </ul>
-    </ul>
+    <li onclick="toggle()" class="md:hidden mr-1 icon bg-white" href="javascript:void(0);">
+      <button class="outline-none mobile-menu-button">
+        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </li>
+  </ul>
 
     <h1 class="text-3xl font-bold underline">
         Zoo of Peculiarity
